@@ -1,6 +1,6 @@
 # RentalPoint
 This is a desktop app for administrating an equipment rental point system wich works with SQL Server. 
-In it you can edit all database tables and also place orders and returns for clients.
+In it you can edit all database tables, place orders and returns for clients and also print some bills and statistics.
 
 ## Some screenshots
 1. Clients table
