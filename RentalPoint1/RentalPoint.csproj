@@ -1,0 +1,446 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{519DB623-D2D5-49D4-ABCE-595D4A8B48C8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RentalPoint1</RootNamespace>
+    <AssemblyName>RentalPoint1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ClientRentHistory_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientRentHistory_Form.Designer.cs">
+      <DependentUpon>ClientRentHistory_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditAttachmentAmount_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditAttachmentAmount_Form.Designer.cs">
+      <DependentUpon>EditAttachmentAmount_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditBrand_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBrand_Form.Designer.cs">
+      <DependentUpon>EditBrand_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditClient_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditClient_Form.Designer.cs">
+      <DependentUpon>EditClient_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCompatibleDetails_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCompatibleDetails_Form.Designer.cs">
+      <DependentUpon>EditCompatibleDetails_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDetail_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDetail_Form.Designer.cs">
+      <DependentUpon>EditDetail_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDiscountType_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditDiscountType_Form.Designer.cs">
+      <DependentUpon>EditDiscountType_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditGood_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditGood_Form.Designer.cs">
+      <DependentUpon>EditGood_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditModel_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditModel_Form.Designer.cs">
+      <DependentUpon>EditModel_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditModelType_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditModelType_Form.Designer.cs">
+      <DependentUpon>EditModelType_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditOrder_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditOrder_Form.Designer.cs">
+      <DependentUpon>EditOrder_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProducer_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProducer_Form.Designer.cs">
+      <DependentUpon>EditProducer_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProduct_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProduct_Form.Designer.cs">
+      <DependentUpon>EditProduct_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditRentFromTo_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditRentFromTo_Form.Designer.cs">
+      <DependentUpon>EditRentFromTo_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderRents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderRents.Designer.cs">
+      <DependentUpon>OrderRents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderBill_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderBill_Form.Designer.cs">
+      <DependentUpon>OrderBill_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order_Form.Designer.cs">
+      <DependentUpon>Order_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintDataExtensions.cs" />
+    <Compile Include="ProductCompatibleDetails_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductCompatibleDetails_Form.Designer.cs">
+      <DependentUpon>ProductCompatibleDetails_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_Form.Designer.cs">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MyRadioButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryEdit_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryEdit_Form.Designer.cs">
+      <DependentUpon>QueryEdit_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RentalPointDataSet.cs">
+      <DependentUpon>RentalPointDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="RentalPointDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RentalPointDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="ReturnBill_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReturnBill_Form.Designer.cs">
+      <DependentUpon>ReturnBill_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectAttachment_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectAttachment_Form.Designer.cs">
+      <DependentUpon>SelectAttachment_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectGood_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectGood_Form.Designer.cs">
+      <DependentUpon>SelectGood_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Return_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Return_Form.Designer.cs">
+      <DependentUpon>Return_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLCommandParams.cs" />
+    <Compile Include="Statistics_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics_Form.Designer.cs">
+      <DependentUpon>Statistics_Form.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ClientRentHistory_Form.resx">
+      <DependentUpon>ClientRentHistory_Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditAttachmentAmount_Form.resx">
+      <DependentUpon>EditAttachmentAmount_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBrand_Form.resx">
+      <DependentUpon>EditBrand_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditClient_Form.resx">
+      <DependentUpon>EditClient_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCompatibleDetails_Form.resx">
+      <DependentUpon>EditCompatibleDetails_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDetail_Form.resx">
+      <DependentUpon>EditDetail_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDiscountType_Form.resx">
+      <DependentUpon>EditDiscountType_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditGood_Form.resx">
+      <DependentUpon>EditGood_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditModel_Form.resx">
+      <DependentUpon>EditModel_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditModelType_Form.resx">
+      <DependentUpon>EditModelType_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditOrder_Form.resx">
+      <DependentUpon>EditOrder_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProducer_Form.resx">
+      <DependentUpon>EditProducer_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProduct_Form.resx">
+      <DependentUpon>EditProduct_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditRentFromTo_Form.resx">
+      <DependentUpon>EditRentFromTo_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderRents.resx">
+      <DependentUpon>OrderRents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderBill_Form.resx">
+      <DependentUpon>OrderBill_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Order_Form.resx">
+      <DependentUpon>Order_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductCompatibleDetails_Form.resx">
+      <DependentUpon>ProductCompatibleDetails_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_Form.resx">
+      <DependentUpon>Main_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QueryEdit_Form.resx">
+      <DependentUpon>QueryEdit_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReturnBill_Form.resx">
+      <DependentUpon>ReturnBill_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectAttachment_Form.resx">
+      <DependentUpon>SelectAttachment_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectGood_Form.resx">
+      <DependentUpon>SelectGood_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Return_Form.resx">
+      <DependentUpon>Return_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics_Form.resx">
+      <DependentUpon>Statistics_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RentalPointDataSet.xsc">
+      <DependentUpon>RentalPointDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="RentalPointDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>RentalPointDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="RentalPointDataSet.xss">
+      <DependentUpon>RentalPointDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AvailableGoodsQuery.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RentsInfoQuery.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateRentPriceAt.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CompatibleDetails.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateAttachmentPrice.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttachmentsInfo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GetDetailByAttachment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrderAttachments.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TotalPrice.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TotalAttPrice.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClientBillInfo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheFirstRent.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateCLientDiscount.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RentReturnInfo.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoodPrice.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ActiveRents.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\InactiveRents.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UpdateGoodCondition.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReturnAttachments.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AttachmentPrice.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DetailsToAdd.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrderBill.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrderAttachmentsBill.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GetClientByRent.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistics_ClientActivity.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistics_ClientPaid.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistics_DetailPopularity.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistics_ProductPopularity.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ClientFill.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ModelFill.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DetailFill.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProductFill.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ProductWhereId.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SetsWhereProductId.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RentalPointTest.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrderRents.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
